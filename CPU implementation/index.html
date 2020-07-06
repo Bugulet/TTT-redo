@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script
+      src="p5.min.js"
+    ></script>
+    
+
+    
+
+    <link rel="shortcut icon" href="https://p5js.org/assets/img/favicon.ico" />
+    <link rel="icon" href="https://p5js.org/assets/img/favicon.ico" />
+    <script src="build/build.js"></script>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: auto;
+        background-color: black;
+        color:white;
+      }
+    </style>
+    
+    <script></script>
+  </head>
+
+  <body >
+    <div id="sketchHolder" style="border: 1mm solid orange; width:720px; height:480px">
+
+    </div>
+
+    <div id="stats" style="width:300px; margin:0 auto; padding: 0%; display: block; font-size: large;">
+      <div id="frameRate">Framerate: 0</div>
+       <div id="fragmentNumber">Fragments per frame: 0</div> 
+      <div id="resolutionNumber">Current resolution: 0</div>
+     
+      <div id="objectNumber">Objects per frame: 0</div>
+
+      <br><br>
+      <p>Blob strength constant</p>
+      <input type="range" min="1" max="5" value="2.5" step="0.01" class="slider" id="strengthConstant">
+      
+      <p>Resolution</p>
+      <input type="range" min="1" max="40" value="20" class="slider" id="sizeConstant">
+      
+      <p>Number of balls</p>
+      <input type="range" min="1" max="100" value="10" class="slider" id="numberOfBallsConstant">
+    </div>
+
+    
+  </body>
+</html>
